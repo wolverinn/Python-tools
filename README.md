@@ -36,6 +36,8 @@ Useful tools implemented with Python in 200 lines or less.
 <img src="_v_images/20191220190307589_28533.png" width="390px">
 </div>
 
+（[点此下载](https://github.com/wolverinn/Python-tools/releases/tag/v1.0)可执行exe文件）
+
 ### 建立免费IP池:globe_with_meridians: -- [free-ip-pool](free_ip_pool.py)
 
 > Self-made ip pool stored in SQLite3, crawling free proxies from websites that offer them.
@@ -45,9 +47,28 @@ Useful tools implemented with Python in 200 lines or less.
 - 从3个提供免费高匿IP的网站上，爬取IP保存到SQLite3数据库中，构建IP池
 - 测试数据库中IP的有效性，删除失效的IP
 
-### 网速实时监测:satellite: -- [simple-net-speed-monitor](simple_net_speed_monitor.py)
+### 网速实时监测:satellite: -- [simple-net-speed-monitor](net_speed_monitor.pyw)
 
 > A simple net speed monitor using python3 tkinter library. (图形界面)
+
+一个简洁的网速监视器，实时显示计算机上传和下载速度。
+
+<div align="center">
+<img src="_v_images/20191220203803479_15260.png" width="360px">
+</div>
+
+右键菜单支持更多功能:
+
+- 调整位置 Adjust position ：可按键调整，也可输入坐标调整。调整完后选择保存则下次自动应用新位置
+- 调整透明度 Adjust transparency ：新的设置会保存，下次自动加载
+- 重启监测：若关闭调整窗口后（由于直接关闭了调整窗口而不是点击“save”）发现监测停止，可右键“Start monitoring”或者直接双击，就可开始监测
+- 退出程序
+
+<div align="center">
+<img src="_v_images/20191220204054677_12422.png" width="360px">
+</div>
+
+（[点此下载](https://github.com/wolverinn/Python-tools/releases/tag/v1.1)可执行exe文件）
 
 ### 刷网页浏览量:eyeglasses:
 
@@ -64,6 +85,14 @@ Useful tools implemented with Python in 200 lines or less.
 ### 文件同步工具:file_folder: -- [portable-sync](portable_sync.py)
 
 > A tool to sync the files in the computer to the portable devices, including auto-update and deletion.
+
+这是一个小巧的同步工具，可以自动将电脑上的文件夹同步到移动设备（U盘/移动硬盘...）上。可以自定义想要同步的文件夹（可以选多个），对不想同步的文件后缀会自动屏蔽，还可以选择当文件发生更新或删除时如何处理。
+
+之所以写这样一个同步工具，是因为个人觉得将东西同步在云盘上其实是一个很脆弱的做法，就算是自己搭建的云盘，也说不准就崩了，觉得最稳妥的还是同步到自己的移动硬盘或者U盘。然后试了试，发现Windows复制文件夹的时候，首先不会检测文件是否有变化，要么跳过，要么选择替换，效率很低，而且多余的文件不会删除，相当于是合并，这显然和同步的要求相去甚远，所以只好自己写一个简单的同步的 Python 工具。既可以方便快速地访问，又保证了一定的个人信息安全。
+
+<div align="center">
+<img src="_v_images/20191220204416988_4614.jpg" width="700px">
+</div>
 
 ### 文件隐藏小工具:books: -- [hide-file](hide_file.py)
 

@@ -21,6 +21,17 @@ Sync the files on computer to portable devices, including auto-update and deleti
 '''
 
 '''
+setting.json:
+At the minimum, you need to complete the "computer_locations"
+
+"computer_locations" is a list of locations in your computer that you want to sync
+"portable_device_folder" is the location in the portable device where your sync folder exists, you can also leave it blank and a default sync folder will be created automatically
+"ignore" is a list of suffixs to exclude those you don't want to sync
+"override_updates": "y" means when some files have changed, it will be automatically updated without asking; "n" means otherwise
+"override_delete": "y" means when some files no longer exist on the computer, automatically delete the files in the portable device without asking
+'''
+
+'''
 先设置电脑中需要同步的文件夹的绝对路径
 对应的U盘路径如果不设置则会自动检测U盘然后创建同步文件夹
 ignore填文件后缀名，出现在ignore中的文件后缀不会同步
