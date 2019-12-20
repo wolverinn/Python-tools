@@ -71,7 +71,7 @@ def seg_answer():
             new_answer_seg.append(text)
     string = ' '.join(new_answer_seg)
     print("making wordcloud...")
-    wc = WordCloud(font_path='C:/Windows/Fonts/arial.ttf',background_color='white',width=1000,height=800).generate(string)
+    wc = WordCloud(font_path='C:/Windows/Fonts/simkai.ttf',background_color='white',width=1000,height=800).generate(string)
     wc.to_file(question[0]+'.png')
 
 question_url = input("输入知乎问题链接（如：https://www.zhihu.com/question/23819007）：")
