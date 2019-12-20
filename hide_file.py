@@ -2,6 +2,21 @@ import os
 from tkinter import *
 from tkinter import filedialog,messagebox
 
+'''
+@author: github/wolverinn
+@date: 12/12/2018
+
+requirements:
+- Python 3.x
+
+function:
+Hide files or folders in Windows filesystem.
+Hide them visually. Anyone using the file explorer even with the option "show hidden files" can't see the files/folders.
+Using command "dir" or "ls" can't show the files/folders either.
+However, using tab auto-complete in command line will show the filename, if the person knows the first few words of the file.
+To restore the file to unhidden state, you have to remember the filename you have made hidden.
+'''
+
 def choose_file():
     filename = filedialog.askopenfilename()
     # filename = filedialog.askdirectory()

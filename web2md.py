@@ -2,7 +2,20 @@ import html2text
 import requests
 import re
 import os
-# sudo apt-get install python3-tk
+
+'''
+@author: github/wolverinn
+@date: 12/19/2019
+
+requirements:
+- Python 3.x
+- html2text
+- requests
+
+function:
+A simple implementation using html2text library. Save the webpage to markdown.
+Useful when the webpage is an article.
+'''
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",

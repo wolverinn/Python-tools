@@ -2,6 +2,18 @@ import os
 import getpass
 import shutil
 
+'''
+@author: github/wolverinn
+@date: 08/10/2018
+
+requirements:
+- Python 3.x
+
+function:
+Edit the send-to options in Windows when you right-click a file/folder.
+You can remove the existing options, or add a shortcut/program as the send-to option.
+'''
+
 sendto="C:/users/"+str(getpass.getuser())+"/AppData/Roaming/Microsoft/Windows/SendTo"
 def remv():
     for i, file in enumerate(os.listdir(sendto)):

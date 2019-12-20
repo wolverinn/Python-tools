@@ -7,6 +7,23 @@ import time
 import re
 import pickle
 
+'''
+@author: github/wolverinn
+@date: 12/19/2019
+
+requirements:
+- Python 3.x
+- requests
+- selenium
+- chrome
+- chrome driver with the right version and add to ENVironment PATH
+- bs4
+
+function:
+Increase the views of a webpage. For example, a blog.
+But as it doesn't change the ip address. So it only increase the number of views, not the number of viewers.
+'''
+
 def GetUserAgent():
     '''
     功能：随机获取HTTP_User_Agent
@@ -50,7 +67,7 @@ def GetUserAgent():
     user_agent = random.choice(user_agents)
     return user_agent
 
-def get_jianshu(url):
+def get_page(url):
     chrome_options = webdriver.ChromeOptions()
     ua_argument = 'User-Agent="'+GetUserAgent()+'"'
     chrome_options.add_argument(ua_argument)
@@ -72,5 +89,5 @@ def get_jianshu(url):
 url = input("input jianshu url: ")
 count = input("input reads: ")
 for i in range(int(count)):
-    get_jianshu(url)
+    get_page(url)
     print("visited time: {}".format(i))
