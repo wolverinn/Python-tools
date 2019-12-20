@@ -15,6 +15,9 @@ requirements:
 function:
 A simple implementation using html2text library. Save the webpage to markdown.
 Useful when the webpage is an article.
+
+当然，还存在很多可以改进的地方，有时图片没法保存下来
+最重要的是大部分情况下会保存除了文章之外的杂乱信息影响排版
 '''
 
 headers = {
