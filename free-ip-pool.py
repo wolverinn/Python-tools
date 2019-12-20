@@ -11,7 +11,7 @@ import re
 
 '''
 @author: github/wolverinn
-@date: 02/01/2019
+@date: 01/22/2019
 
 requirements:
     Python 3.x
@@ -20,6 +20,7 @@ requirements:
     selenium
     chrome
     chrome driver(add to PATH)
+    random_userAgents.py
 
 function:
 Crawls free proxies from several websites that offer them, and save them to a database to build an ip pool.
