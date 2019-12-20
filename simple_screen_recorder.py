@@ -15,6 +15,7 @@ import threading
 requirements:
 - Python 3.x
 - pywin32
+- ffmpeg(add to PATH)
 
 function:
 Records the screen using ffmpeg.
