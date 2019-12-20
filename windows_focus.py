@@ -26,11 +26,11 @@ except:
 focus_loc="C:/Users/"+str(getpass.getuser())+"/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/Assets/"
 for files in os.listdir(focus_loc):
     new_file="./windows-focus/"+str(files)
-    old_file="C:/Users/"+str(getpass.getuser())+"/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/Assets/"+str(files)
+    old_file=focus_loc + str(files)
     shutil.copyfile(old_file,new_file)
 
 os.chdir("./windows-focus")
-for file in os.listdir("./windows-focus"):
+for file in os.listdir():
     if len(str(file).split(".")) is 1:
         new_name=str(file)+".jpg"
         try:
