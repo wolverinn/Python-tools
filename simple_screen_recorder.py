@@ -17,7 +17,13 @@ requirements:
 - pywin32
 
 function:
-Records the screen using ffmpeg
+Records the screen using ffmpeg.
+Supports self-define frame rate, resolutions, and save location.
+A 3-second delay before starting recording.
+Press F10 to stop.
+Remembers the settings.
+
+待改进：选择路径时可以使用按钮来选择文件夹。参考：hide_file.py
 '''
 
 #添加ffmpeg环境变量
@@ -42,7 +48,6 @@ class Hotkey(threading.Thread):
         # 以下为检测热键是否被按下，并在最后释放快捷键
         try:
             msg = ctypes.wintypes.MSG()
-
             while True:
                 if user32.GetMessageA(ctypes.byref(msg), None, 0, 0) != 0:
                     if msg.message == win32con.WM_HOTKEY:
@@ -51,7 +56,6 @@ class Hotkey(threading.Thread):
                             return
                     user32.TranslateMessage(ctypes.byref(msg))
                     user32.DispatchMessageA(ctypes.byref(msg))
-
         finally:
             user32.UnregisterHotKey(None, id2)# 必须得释放热键，否则下次就会注册失败，所以当程序异常退出，没有释放热键，
                                               # 那么下次很可能就没办法注册成功了，这时可以换一个热键测试
@@ -150,11 +154,11 @@ while(self_destroy):
             quality = int(quality)
             f.close()
         except:
-            video_loc = "C:/users/" + str(user) + "/desktop"
+            video_loc = "C:/users/" + str(user) + "/Videos"
             quality = 20
             resolution = "720x480"
     else:
-        video_loc = "C:/users/" + str(user) + "/desktop"
+        video_loc = "C:/users/" + str(user) + "/Videos"
         quality = 20
         resolution = "720x480"
     if quality > 60 or quality < 0:
@@ -163,7 +167,7 @@ while(self_destroy):
     # 创建主窗口
     video_name = "ouput.mkv"
     root = Tk()
-    root.iconbitmap("camera.ico")
+    # root.iconbitmap("camera.ico")
     root.geometry("420x270")
     root.wm_title("Simple screen recording tool")
     loc_lbl = Label(root, text="Video save location:")
