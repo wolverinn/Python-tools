@@ -18,6 +18,7 @@ requirements:
 - ffmpeg (add to PATH)
 
 待改进：直接下载回答下面的所有视频
+下载时应该创建线程以防止窗口停止响应
 '''
 
 headers={

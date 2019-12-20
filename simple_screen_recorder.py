@@ -25,6 +25,7 @@ Press F10 to stop.
 Remembers the settings.
 
 待改进：选择路径时可以使用按钮来选择文件夹。参考：hide_file.py
+输出视频名称应该带上时间戳
 '''
 
 #添加ffmpeg环境变量
