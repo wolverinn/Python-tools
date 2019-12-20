@@ -16,6 +16,8 @@ requirements:
     html2text
     jieba
     wordcloud
+    chineseStopWords.txt
+    if not Windows, please change the directory of the fonts
 
 function:
 Input a zhihu question URL, get 150 answers, save them to markdown, and generates wordcloud.
