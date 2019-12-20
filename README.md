@@ -140,6 +140,10 @@ Windows聚焦的图片比较漂亮，会经常在电脑上更新。但是，保�
 
 如果一个目录下面有很多 Python 文件，打开命令行再输入```python xxx.py```有些麻烦。而这个工具会一直开启，只需要输入一个数字就可以运行对应的 Python 文件了。
 
+### 取一个地道英文名 -- [ename](ename.py)
+
+输入中文名和性别，得到一个地道的英文名。其实就是调用了扇贝网的接口。
+
 ### 获取随机的UserAgent -- [random-userAgents](random_userAgents.py)
 
 里面收集了很多不同的 UserAgent ，爬虫的时候可以用到，获取一个随机的 UserAgent .
