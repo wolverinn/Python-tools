@@ -1,0 +1,7 @@
+{
+    "computer_locations":["D:\\test"],
+    "portable_device_folder":"",
+    "ignore":[".pkg"],
+    "override_updates":"y",
+    "override_delete":"y"
+}
