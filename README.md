@@ -20,7 +20,9 @@ Useful tools implemented with Python in 200 lines or less.
 - 开始录制之前会有3秒提示
 - 结束录制按下F10即可
 
-![界面](_v_images/20191220185122289_8134.png)
+<div align="center">
+<img src="_v_images/20191220185122289_8134.png" width="390px">
+</div>
 
 （[点此下载](https://github.com/wolverinn/Python-tools/releases/tag/v1.0)可执行exe文件）
 
@@ -30,7 +32,9 @@ Useful tools implemented with Python in 200 lines or less.
 
 通过知乎视频id下载视频到当前目录，可一次性添加多个id下载。视频id就是知乎视频链接末尾的数字，在知乎收藏夹中打开带有视频的回答，便可找到视频id
 
-![zhihu-vd](_v_images/20191220190307589_28533.png)
+<div align="center">
+<img src="_v_images/20191220190307589_28533.png" width="390px">
+</div>
 
 ### 建立免费IP池:globe_with_meridians: -- [free-ip-pool](free_ip_pool.py)
 
@@ -67,7 +71,9 @@ Useful tools implemented with Python in 200 lines or less.
 
 其他人使用文件资源管理器打开文件所在目录的时候，无法看到该文件。就算设置了“显示隐藏的文件（夹）”也看不到。在命令行中使用```dir```或者```ls```命令也看不到。对于一般需求的文件保护来说足够了。
 
-![file-hidder](_v_images/20191220191832613_15118.png)
+<div align="center">
+<img src="_v_images/20191220191832613_15118.png" width="390px">
+</div>
 
 ### 爬取知乎回答并生成词云图:book: -- [zhihu-answer-wordcloud](zhihu_answer_wordcloud.py)
 
@@ -75,13 +81,13 @@ Useful tools implemented with Python in 200 lines or less.
 
 之后再对markdown文件中的内容进行分析，使用了中文分词工具和词云图第三方库，生成某一问题下的热门答案的词云图。
 
-![zhihu-wordcloud](_v_images/20191220192915559_16757.png)
-
 ### 修改右键“发送到”菜单 -- [send-to-editor](send_to_editor.py)
 
 既可以删除“发送到”菜单中你不想要的内容，也可以往里面添加路径，或者添加某个应用程序，实现用此应用程序打开。
 
-![send-to](_v_images/20191220193145179_20665.png)
+<div align="center">
+<img src="_v_images/20191220193145179_20665.png" width="390px">
+</div>
 
 ### 一键获取Windows聚焦的图片 -- [windows-focus](windows_focus.py)
 
@@ -108,3 +114,5 @@ Windows聚焦的图片比较漂亮，会经常在电脑上更新。但是，保�
 ### 获取随机的UserAgent -- [random-userAgents](random_userAgents.py)
 
 里面收集了很多不同的 UserAgent ，爬虫的时候可以用到，获取一个随机的 UserAgent .
+
+(PS: *这个 repo 的灵感来源于：[GitHub - geekcomputers/Python: My Python Examples](https://github.com/geekcomputers/Python)*)
