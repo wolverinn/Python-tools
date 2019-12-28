@@ -3,6 +3,8 @@ Useful tools implemented with Python in 200 lines or less.
 
 这个 repository 收集了我从 2018 年开始用 Python 以来，写的一些小工具，涵盖了爬虫、系统操作等方面。Python 作为一门脚本语言，在完成一些文件处理和系统调用时有着很大的优势；在网络数据采集方面，也因为一些方便易用的第三方库使得爬取信息变得很容易上手。因此很多时候，100行左右的 Python 就能帮我解决很多问题，大大提高效率。
 
+你可以使用这些工具来解决一些问题，提高生产效率；或者，也可以将它们作为小项目练习 Python 这门语言~
+
 我编写的这些工具都比较轻量级，只有一个 Python 文件，**100行**左右的代码，并且只调用了很少的第三方库或者只需要内置库就OK。这些工具涉及到的方面很多，包括建立爬虫的**免费IP池**:globe_with_meridians:，**刷网页浏览量**:eyeglasses:，**爬取知乎答案**:book:，**下载知乎视频**:beginner:；**屏幕录制**:movie_camera:，**网速监测**:satellite:工具，**文件隐藏**:books:，文件**同步工具**:file_folder:等等。希望你能从中找到自己喜欢的:heart:
 
 如果你有新的想法，或者对代码的优化，欢迎提 issues 或者 pull request ！
