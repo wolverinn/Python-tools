@@ -148,4 +148,4 @@ Windows聚焦的图片比较漂亮，会经常在电脑上更新。但是，保�
 
 里面收集了很多不同的 UserAgent ，爬虫的时候可以用到，获取一个随机的 UserAgent .
 
-(PS: *这个 repo 的灵感来源于：[GitHub - geekcomputers/Python: My Python Examples](https://github.com/geekcomputers/Python)*)
+*Inspired by [GitHub - geekcomputers/Python: My Python Examples](https://github.com/geekcomputers/Python)*
