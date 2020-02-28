@@ -10,7 +10,8 @@ requirements:
     requests
     bs4
 
-function: 根据中文名和性别，起一个地道英文名，调用了扇贝网的接口
+功能: 根据中文名和性别，起一个地道英文名，调用了扇贝网的接口
+function: Generate an English name based on Chinese name and gender. Using the API provided by shanbay
 '''
 
 url1="http://ename.shanbay.com.cn/?gender="

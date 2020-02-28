@@ -14,6 +14,7 @@ Edit the send-to options in Windows when you right-click a file/folder.
 You can remove the existing options, or add a shortcut/program as the send-to option.
 
 这个程序最好做成图形操作界面
+TODO: make a GUI for this program
 '''
 
 sendto="C:/users/"+str(getpass.getuser())+"/AppData/Roaming/Microsoft/Windows/SendTo"

@@ -10,15 +10,21 @@ from tkinter import *
 
 requirements: only Python 3
 
-function:实时显示计算机上传和下载速度
+功能:实时显示计算机上传和下载速度
+function: Show the upload & download speed of the computer in real time
 
 待改进：
 - 颜色不可自定义
 - 少数操作略显不流畅
 - 调整窗口布局可以改进
 - 没有流量统计功能
+TODO: 
+- Support self-define color
+- Some operations are not smooth
+- "Adjust position" can be improved
+- Don't have the function for traffic statistics
 
-本来生成exe的时候只想生成单个文件，但pyinstaller貌似-F -w同时使用的话生成的GUI程序无法调用os.popen()
+(本来生成exe的时候只想生成单个文件，但pyinstaller貌似-F -w同时使用的话生成的GUI程序无法调用os.popen())
 '''
 
 def start():

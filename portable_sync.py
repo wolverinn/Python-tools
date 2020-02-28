@@ -18,6 +18,7 @@ function：
 Sync the files on computer to portable devices, including auto-update and deletion.
 
 待改进：setting.json 可以直接放在U盘的同步文件夹中。setting.json可以直接不要U盘文件夹这一项，直接硬编码
+TODO: setting.json can be directly put in the /sync folder in u-drive. setting.json can abandon the setting of u-drive folders, but hard-coding instead.
 '''
 
 '''

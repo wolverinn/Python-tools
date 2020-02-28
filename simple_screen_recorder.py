@@ -25,6 +25,7 @@ Press F10 to stop.
 Remembers the settings.
 
 待改进：选择路径时可以使用按钮来选择文件夹。参考：hide_file.py
+TODO: Use a "choose path.." button to choose a path. refer to: hide_file.py
 '''
 
 #添加ffmpeg环境变量

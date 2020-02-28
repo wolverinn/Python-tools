@@ -18,6 +18,8 @@ Useful when the webpage is an article.
 
 当然，还存在很多可以改进的地方，有时图片没法保存下来
 最重要的是大部分情况下会保存除了文章之外的杂乱信息影响排版
+TODO: Sometimes can't save pictures
+Save only the article, trim other content
 '''
 
 headers = {

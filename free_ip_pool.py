@@ -27,6 +27,7 @@ Crawls free proxies from several websites that offer them, and save them to a da
 Also validates the ip in the pool.
 
 待改进：使用多线程验证IP有效性
+TODO: Validate ip using multiprocess
 '''
 
 conn = sqlite3.connect('pool.db')
